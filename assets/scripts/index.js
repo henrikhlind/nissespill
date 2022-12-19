@@ -2,7 +2,7 @@ const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext('2d');
 
 const santaImage = new Image();
-santaImage.src = '../img/nisse-.png';
+santaImage.src = '../assets/img/nisse.png';
 
 let santaHeight = window.innerHeight / 3;
 let santaWidth = window.innerWidth / 5;
@@ -20,13 +20,13 @@ function moveSanta(event) {
   if (event.key === 'ArrowRight') {
     santaX += santaSpeed;
     if(!flipped) {
-        santaImage.src = '../img/nisse-flipped.png';
+        santaImage.src = '../assets/img/nisse-flipped.png';
         flipped = true;
     }
   } else if (event.key === 'ArrowLeft') {
     santaX -= santaSpeed;
     if(flipped) {
-        santaImage.src = '../img/nisse-.png';
+        santaImage.src = '../assets/img/nisse.png';
         flipped = false;
     }
   }
