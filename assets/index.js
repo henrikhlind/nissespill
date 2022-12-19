@@ -2,7 +2,7 @@ const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext('2d');
 
 const santaImage = new Image();
-santaImage.src = '../assets/img/nisse.png';
+santaImage.src = '/img/nisse.png';
 
 let santaHeight = window.innerHeight / 3;
 let santaWidth = window.innerWidth / 5;
